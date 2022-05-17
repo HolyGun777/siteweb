@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-red { background-color: red; }
+.bg-green { background-color: green; }
+.bg-yellow { background-color: yellow; }
+.bg-blue { background-color: blue; }
+.bg-light-blue { background-color: lightblue; }
+.bg-white { background-color: white; }
+.bg-black { background-color: black; }
+.dot {
+    height: 75px;
+    width: 75px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.p-10 { padding: 10px; }
+.w-50 { width: 50% }
+.w-50-100 { width: 50% }
+.w-100 { width: 100% }
+.txt-center { text-align: center; }
+.size { height: 150px; width: 100px;}
+
+.row { display: flex; }
+.col { display: flex; flex-direction: column; }
+
+  .space-left{display: flex;justify-content: end;}
+  .space-btw { display: flex; justify-content: space-between; }
+  .space-around { display: flex; justify-content: space-around; }
+  .jus-center { display: flex; justify-content: center; }
+  .al-itm-center { display: flex; align-items: center; }
+  
+
+.max-720px { max-width: 720px; }
+
+.jus-center { display: flex; justify-content: center; }
+
+.container { display: flex; flex-direction: column; }
+
+@media screen and (max-width: 573px) {
+  .w-50-100 {
+    width: 100%;
+  }
+  .row-col { display: flex; flex-direction: column; }
+}
+
+.card {
+  height: auto;
+  width: 25%;
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px black;
+}
+.card > img { width: 100% }
+
+.size { height: 150px; width: 100px;}
+
+.grille{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 10px;
+  border: 10px;
+
+}
+
+
+.column {
+  grid-column-start:1;
+}
+.column1 {
+  grid-column-start:2;
+}
+.column2 {
+  grid-column-start:3;
+}
+.row0 {
+  grid-row-start: 1;
+}
+.row1 {
+  grid-row-start: 2;
+}
+.row2 {
+  grid-row-start: 3;
+}
